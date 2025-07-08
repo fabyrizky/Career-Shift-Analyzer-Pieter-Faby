@@ -1,46 +1,29 @@
 # 🚀 Career Shift to Future STEM Industry
 
-> AI-powered career transition platform helping professionals transition to high-growth STEM industries like AI, Data Science, Cybersecurity, and Cloud Computing.
+> AI-powered career transition platform for STEM careers
 
-![Python](https://img.shields.io/badge/python-v3.8+-blue.svg)
-![Streamlit](https://img.shields.io/badge/streamlit-v1.29.0-red.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Deployment](https://img.shields.io/badge/deployment-ready-brightgreen.svg)
+[![Streamlit](https://img.shields.io/badge/streamlit-v1.28+-red.svg)](https://streamlit.io/)
+[![Python](https://img.shields.io/badge/python-3.11-blue.svg)](https://python.org/)
 
 ## ✨ Features
 
-- **🔍 Real-time Market Intelligence**: Live STEM job market data and trends
-- **🎯 Interactive Career Assessment**: Personalized skill evaluation and readiness scoring
-- **📚 Smart Course Catalog**: Curated learning paths for different STEM fields
-- **🤖 AI Career Advisor**: Intelligent career guidance and transition planning
-- **📊 Visual Analytics**: Interactive charts and salary projections
-- **💼 Industry Insights**: Growth rates and market opportunities
+- 🔍 **Real-time Market Data** - Live STEM job trends
+- 📊 **Interactive Analytics** - Growth projections & salaries  
+- 📚 **Course Catalog** - Curated learning paths
+- 🤖 **AI Career Advisor** - Personalized guidance
+- 🎯 **Skill Assessment** - Evaluate your readiness
 
-## 🚀 Quick Deployment
+## 🚀 Quick Deploy
 
-### Option 1: Deploy to Streamlit Cloud (Recommended)
-
-1. **Fork this repository** to your GitHub account
-
-2. **Deploy on Streamlit Cloud:**
+1. **Fork this repo** 
+2. **Deploy to Streamlit Cloud:**
    - Go to [share.streamlit.io](https://share.streamlit.io/)
-   - Click "New app"
-   - Connect your GitHub account
-   - Select your forked repository
-   - Set main file path to `app.py`
-   - Click "Deploy"
+   - Connect your GitHub
+   - Select this repo
+   - Deploy!
 
-3. **Done!** Your app will be live in minutes.
-
-### Option 2: Local Development
+## 🛠️ Local Development
 
 ```bash
-# Clone repository
-git clone https://github.com/yourusername/career-shift-stem.git
-cd career-shift-stem
-
-# Install dependencies
 pip install -r requirements.txt
-
-# Run application
 streamlit run app.py
