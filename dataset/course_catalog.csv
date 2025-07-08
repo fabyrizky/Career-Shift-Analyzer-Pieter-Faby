@@ -1,0 +1,41 @@
+course_name,platform,industry,skill_focus,duration_weeks,difficulty,price_usd,rating,url
+Machine Learning by Andrew Ng,Coursera,AI,Machine Learning,11,Beginner,0,4.9,https://www.coursera.org/learn/machine-learning
+Deep Learning Specialization,Coursera,AI,Deep Learning,16,Intermediate,49,4.8,https://www.coursera.org/specializations/deep-learning
+Python for Data Science,Udemy,AI,Python,8,Beginner,0,4.6,https://www.udemy.com/course/python-for-data-science
+TensorFlow Developer Certificate,Coursera,AI,TensorFlow,16,Intermediate,49,4.7,https://www.coursera.org/professional-certificates/tensorflow-in-practice
+Natural Language Processing,Coursera,AI,NLP,16,Advanced,49,4.7,https://www.coursera.org/specializations/natural-language-processing
+Blockchain Basics,Coursera,Blockchain,Blockchain Fundamentals,4,Beginner,0,4.6,https://www.coursera.org/learn/blockchain-basics
+Ethereum and Solidity,Udemy,Blockchain,Solidity,12,Intermediate,19.99,4.5,https://www.udemy.com/course/ethereum-and-solidity
+DeFi Infrastructure,Coursera,Blockchain,DeFi,8,Advanced,39,4.4,https://www.coursera.org/learn/decentralized-finance-infrastructure
+Smart Contracts Development,edX,Blockchain,Smart Contracts,10,Intermediate,99,4.6,https://www.edx.org/learn/blockchain/smart-contracts
+Web3 Development,Udemy,Blockchain,Web3.js,8,Intermediate,29.99,4.5,https://www.udemy.com/course/web3-development
+CompTIA Security+,Udemy,Cybersecurity,Security Fundamentals,12,Beginner,34.99,4.7,https://www.udemy.com/course/comptia-security-plus
+Ethical Hacking Complete,Udemy,Cybersecurity,Penetration Testing,16,Intermediate,49.99,4.6,https://www.udemy.com/course/ethical-hacking
+Cloud Security Fundamentals,Coursera,Cybersecurity,Cloud Security,8,Intermediate,39,4.5,https://www.coursera.org/learn/cloud-security-basics
+CISSP Certification Prep,Udemy,Cybersecurity,Security Frameworks,20,Advanced,79.99,4.7,https://www.udemy.com/course/cissp-certification
+Network Security,edX,Cybersecurity,Network Security,12,Intermediate,149,4.6,https://www.edx.org/learn/cybersecurity/network-security
+Bioinformatics for Beginners,Coursera,BioTech,Bioinformatics,8,Beginner,0,4.5,https://www.coursera.org/learn/bioinformatics
+Genomic Data Science,Coursera,BioTech,Genomics,24,Advanced,49,4.6,https://www.coursera.org/specializations/genomic-data-science
+R for Bioinformatics,edX,BioTech,R Programming,10,Intermediate,99,4.4,https://www.edx.org/learn/bioinformatics/r-programming
+Clinical Research Methods,Coursera,BioTech,Clinical Research,12,Intermediate,39,4.5,https://www.coursera.org/learn/clinical-research
+Biostatistics in R,Udemy,BioTech,Biostatistics,8,Intermediate,39.99,4.6,https://www.udemy.com/course/biostatistics-r
+Precision Agriculture,Coursera,AgriTech,Precision Agriculture,6,Intermediate,0,4.4,https://www.coursera.org/learn/precision-agriculture
+IoT for Agriculture,Udemy,AgriTech,IoT,10,Intermediate,44.99,4.5,https://www.udemy.com/course/iot-agriculture
+GIS for Agriculture,edX,AgriTech,GIS,12,Advanced,149,4.6,https://www.edx.org/learn/gis/agriculture
+Sustainable Farming,Coursera,AgriTech,Sustainability,8,Beginner,0,4.5,https://www.coursera.org/learn/sustainable-agriculture
+AgTech Data Analytics,Udemy,AgriTech,Data Analytics,10,Intermediate,39.99,4.4,https://www.udemy.com/course/agtech-analytics
+Marine Biology Basics,Coursera,AquaTech,Marine Biology,8,Beginner,0,4.5,https://www.coursera.org/learn/marine-biology
+Aquaculture Systems,edX,AquaTech,Aquaculture Systems,12,Intermediate,99,4.4,https://www.edx.org/learn/aquaculture
+Water Quality Management,Udemy,AquaTech,Water Quality,6,Intermediate,29.99,4.5,https://www.udemy.com/course/water-quality
+Marine IoT Systems,Coursera,AquaTech,IoT,10,Advanced,49,4.3,https://www.coursera.org/learn/marine-iot
+Sustainable Fisheries,edX,AquaTech,Sustainability,8,Intermediate,79,4.5,https://www.edx.org/learn/sustainable-fisheries
+Aerospace Engineering,edX,SpaceTech,Aerospace Engineering,16,Advanced,199,4.7,https://www.edx.org/learn/aerospace-engineering
+Orbital Mechanics,Coursera,SpaceTech,Orbital Mechanics,12,Advanced,79,4.6,https://www.coursera.org/learn/orbital-mechanics
+Satellite Systems Design,edX,SpaceTech,Satellite Systems,14,Advanced,179,4.5,https://www.edx.org/learn/satellite-systems
+MATLAB for Engineers,Coursera,SpaceTech,MATLAB,10,Intermediate,49,4.6,https://www.coursera.org/learn/matlab
+Space Robotics,Udemy,SpaceTech,Robotics,12,Advanced,69.99,4.4,https://www.udemy.com/course/space-robotics
+Solar Energy Basics,Coursera,Renewable,Solar Energy,6,Beginner,0,4.6,https://www.coursera.org/learn/solar-energy-basics
+Wind Energy Systems,edX,Renewable,Wind Energy,10,Intermediate,99,4.5,https://www.edx.org/learn/wind-energy
+Battery Technology,Coursera,Renewable,Battery Technology,8,Advanced,49,4.4,https://www.coursera.org/learn/battery-technology
+Grid Integration,edX,Renewable,Grid Integration,12,Advanced,149,4.5,https://www.edx.org/learn/smart-grid
+Energy Storage Systems,Udemy,Renewable,Energy Storage,10,Intermediate,54.99,4.6,https://www.udemy.com/course/energy-storage
