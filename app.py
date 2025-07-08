@@ -700,18 +700,3 @@ def main():
         </p>
     </div>
     """, unsafe_allow_html=True)
-    
-    # Final call to action badges
-    col1, col2, col3, col4 = st.columns(4)
-    
-    with col1:
-        st.info("🎓 **Learn**\nInteractive courses")
-    
-    with col2:
-        st.success("🚀 **Build**\nPortfolio projects")
-    
-    with col3:
-        st.warning("🤝 **Network**\nConnect with pros")
-    
-    with col4:
-        st.error("💼 **Land**\nDream STEM job")
