@@ -683,24 +683,41 @@ def main():
     
     with col1:
         st.markdown("""
-        **🔧 Built by:**
-        - Faby Rizky (Creator)
-        - Pieter Andrian (Developer)
+        **👥 Development Team:**
+        
+        Built by **Faby Rizky** & Developed 🤝🏻 by **Pieter Andrian**
         """)
     
     with col2:
         st.markdown("""
-        **⚡ Powered by:**
+        **⚡ Technology Stack:**
         - Streamlit Framework
         - OpenRouter AI (Qwen QwQ 32B)
         - Advanced Analytics
         """)
     
-    # Final message
+    # Creator highlight section
     st.markdown("---")
     st.markdown(
-        "<div style='text-align: center; color: #b0b3b8;'>"
-        "<p><strong>© 2025 STEM Career Platform</strong></p>"
+        """
+        <div style='background: rgba(0, 240, 255, 0.05); padding: 1.5rem; border-radius: 15px; text-align: center; border: 1px solid rgba(0, 240, 255, 0.2);'>
+            <h4 style='color: #00f0ff; margin-bottom: 1rem;'>👨‍💻 Meet the Creators</h4>
+            <p style='color: #ffffff; font-size: 1.1rem; margin-bottom: 0.5rem;'>
+                <strong>Built by Faby Rizky & Developed 🤝🏻 by Pieter Andrian</strong>
+            </p>
+            <p style='color: #b0b3b8; margin-bottom: 1rem;'>
+                Passionate about helping professionals transition to tech careers
+            </p>
+            <p style='color: #00d4aa; font-weight: 600;'>
+                © 2025 STEM Career Platform
+            </p>
+        </div>
+        """, 
+        unsafe_allow_html=True
+    )
+    
+    st.markdown(
+        "<div style='text-align: center; color: #b0b3b8; margin-top: 1rem;'>"
         "<p>🌟 Transforming careers, one professional at a time 🌟</p>"
         "</div>", 
         unsafe_allow_html=True
