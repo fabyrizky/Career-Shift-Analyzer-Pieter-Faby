@@ -1,0 +1,81 @@
+industry,skill_name,skill_category,importance,difficulty,learning_hours
+AI,Python,Programming,Essential,Medium,200
+AI,Machine Learning,Core Knowledge,Essential,High,300
+AI,Deep Learning,Core Knowledge,Essential,High,400
+AI,TensorFlow,Framework,Important,Medium,150
+AI,PyTorch,Framework,Important,Medium,150
+AI,Mathematics,Foundation,Essential,High,250
+AI,Statistics,Foundation,Essential,Medium,200
+AI,Data Science,Core Knowledge,Essential,Medium,250
+AI,NLP,Specialization,Important,High,300
+AI,Computer Vision,Specialization,Important,High,300
+Blockchain,Solidity,Programming,Essential,High,250
+Blockchain,JavaScript,Programming,Essential,Medium,200
+Blockchain,Web3.js,Framework,Essential,Medium,150
+Blockchain,Smart Contracts,Core Knowledge,Essential,High,300
+Blockchain,Cryptography,Foundation,Essential,High,200
+Blockchain,Ethereum,Platform,Essential,Medium,150
+Blockchain,DeFi,Specialization,Important,High,250
+Blockchain,Node.js,Framework,Important,Medium,150
+Blockchain,Rust,Programming,Optional,High,300
+Blockchain,Security Auditing,Specialization,Important,High,200
+Cybersecurity,Network Security,Core Knowledge,Essential,High,300
+Cybersecurity,Python,Programming,Essential,Medium,200
+Cybersecurity,Linux,Operating System,Essential,Medium,150
+Cybersecurity,Penetration Testing,Core Knowledge,Essential,High,350
+Cybersecurity,SIEM,Tools,Important,Medium,200
+Cybersecurity,Cryptography,Foundation,Essential,High,250
+Cybersecurity,Cloud Security,Specialization,Important,High,300
+Cybersecurity,Ethical Hacking,Core Knowledge,Important,High,400
+Cybersecurity,Security Frameworks,Knowledge,Important,Medium,150
+Cybersecurity,Incident Response,Core Knowledge,Essential,High,250
+BioTech,Python,Programming,Essential,Medium,200
+BioTech,R,Programming,Essential,Medium,200
+BioTech,Bioinformatics,Core Knowledge,Essential,High,400
+BioTech,Genomics,Core Knowledge,Essential,High,350
+BioTech,Molecular Biology,Foundation,Essential,High,300
+BioTech,Statistics,Foundation,Essential,Medium,200
+BioTech,Machine Learning,Tools,Important,High,300
+BioTech,Lab Techniques,Practical,Important,High,400
+BioTech,Clinical Research,Knowledge,Important,High,250
+BioTech,Biostatistics,Specialization,Essential,High,300
+AgriTech,IoT,Technology,Essential,High,250
+AgriTech,Data Analytics,Core Knowledge,Essential,Medium,200
+AgriTech,Python,Programming,Essential,Medium,200
+AgriTech,GIS,Tools,Essential,High,300
+AgriTech,Remote Sensing,Technology,Important,High,250
+AgriTech,Precision Agriculture,Core Knowledge,Essential,High,350
+AgriTech,Sustainability,Knowledge,Important,Medium,150
+AgriTech,Automation,Technology,Important,High,300
+AgriTech,Agricultural Science,Foundation,Essential,Medium,200
+AgriTech,Supply Chain,Knowledge,Important,Medium,200
+AquaTech,Marine Biology,Foundation,Essential,High,300
+AquaTech,Water Quality Analysis,Core Knowledge,Essential,High,250
+AquaTech,IoT,Technology,Important,High,250
+AquaTech,Data Analytics,Core Knowledge,Essential,Medium,200
+AquaTech,Python,Programming,Important,Medium,200
+AquaTech,Aquaculture Systems,Core Knowledge,Essential,High,400
+AquaTech,Environmental Science,Foundation,Essential,Medium,250
+AquaTech,Sustainability,Knowledge,Essential,Medium,150
+AquaTech,Automation,Technology,Important,High,300
+AquaTech,Marine Biotechnology,Specialization,Important,High,350
+SpaceTech,Aerospace Engineering,Foundation,Essential,Very High,500
+SpaceTech,Python,Programming,Essential,Medium,200
+SpaceTech,MATLAB,Tools,Essential,High,250
+SpaceTech,C++,Programming,Important,High,300
+SpaceTech,Orbital Mechanics,Core Knowledge,Essential,Very High,400
+SpaceTech,Systems Engineering,Core Knowledge,Essential,High,350
+SpaceTech,Satellite Systems,Specialization,Essential,High,400
+SpaceTech,Robotics,Technology,Important,High,350
+SpaceTech,Simulation,Tools,Essential,High,300
+SpaceTech,CAD,Tools,Important,Medium,200
+Renewable,Energy Systems,Core Knowledge,Essential,High,300
+Renewable,Python,Programming,Essential,Medium,200
+Renewable,MATLAB,Tools,Important,High,250
+Renewable,Power Electronics,Core Knowledge,Essential,High,350
+Renewable,Grid Integration,Specialization,Essential,High,300
+Renewable,Solar Energy,Specialization,Important,High,250
+Renewable,Wind Energy,Specialization,Important,High,250
+Renewable,Battery Technology,Specialization,Important,High,300
+Renewable,Energy Storage,Core Knowledge,Essential,High,350
+Renewable,Sustainability,Knowledge,Essential,Medium,150
