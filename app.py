@@ -15,7 +15,7 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Enhanced CSS with proper rendering
+# Enhanced CSS
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
@@ -86,69 +86,6 @@ st.markdown("""
         -webkit-text-fill-color: transparent;
         background-clip: text;
         margin-bottom: 0.5rem;
-    }
-    
-    .ai-response {
-        background: linear-gradient(135deg, rgba(0, 240, 255, 0.1) 0%, rgba(179, 71, 217, 0.1) 100%);
-        border: 1px solid rgba(0, 240, 255, 0.3);
-        border-radius: 15px;
-        padding: 1.5rem;
-        margin: 1rem 0;
-        position: relative;
-        overflow: hidden;
-    }
-    
-    .ai-response::before {
-        content: "🤖";
-        position: absolute;
-        top: 10px;
-        right: 15px;
-        font-size: 1.5rem;
-        opacity: 0.5;
-    }
-    
-    .skill-bar {
-        background: rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
-        overflow: hidden;
-        margin: 0.5rem 0;
-        height: 20px;
-    }
-    
-    .skill-fill {
-        height: 100%;
-        background: linear-gradient(90deg, #00f0ff, #b347d9);
-        border-radius: 10px;
-        transition: width 0.8s ease;
-    }
-    
-    .footer-clean {
-        background: rgba(10, 14, 26, 0.95);
-        backdrop-filter: blur(20px);
-        border-top: 1px solid rgba(0, 240, 255, 0.2);
-        border-radius: 20px 20px 0 0;
-        padding: 3rem 2rem;
-        margin-top: 4rem;
-        text-align: center;
-    }
-    
-    .success-metric {
-        background: rgba(0, 240, 255, 0.1);
-        padding: 1rem;
-        border-radius: 12px;
-        margin: 0.5rem;
-        display: inline-block;
-        min-width: 120px;
-    }
-    
-    .course-badge {
-        background: rgba(0, 240, 255, 0.2);
-        padding: 0.4rem 0.8rem;
-        border-radius: 8px;
-        margin: 0.3rem;
-        display: inline-block;
-        font-size: 0.9rem;
-        font-weight: 500;
     }
     
     .stButton > button {
@@ -397,11 +334,6 @@ def main():
                 <p style="color: #b0b3b8; margin-bottom: 1rem;">Build intelligent systems that transform industries</p>
                 <p style="color: #ffffff;"><strong>Salary:</strong> $95K - $190K</p>
                 <p style="color: #ffffff;"><strong>Growth:</strong> +150% over 5 years</p>
-                <div style="margin-top: 1rem;">
-                    <span class="course-badge">Python</span>
-                    <span class="course-badge">TensorFlow</span>
-                    <span class="course-badge">Machine Learning</span>
-                </div>
             </div>
             """, unsafe_allow_html=True)
         
@@ -412,11 +344,6 @@ def main():
                 <p style="color: #b0b3b8; margin-bottom: 1rem;">Design scalable cloud infrastructure</p>
                 <p style="color: #ffffff;"><strong>Salary:</strong> $90K - $185K</p>
                 <p style="color: #ffffff;"><strong>Growth:</strong> +180% over 5 years</p>
-                <div style="margin-top: 1rem;">
-                    <span class="course-badge">AWS</span>
-                    <span class="course-badge">Kubernetes</span>
-                    <span class="course-badge">DevOps</span>
-                </div>
             </div>
             """, unsafe_allow_html=True)
     
@@ -434,19 +361,19 @@ def main():
             fig2 = create_salary_comparison_chart()
             st.plotly_chart(fig2, use_container_width=True)
         
-        # Market insights with enhanced styling
-        st.markdown("""
-        <div class="glass-card">
-            <h4 style="color: #00f0ff; margin-bottom: 1.5rem;">📊 Key Market Insights</h4>
-            <div style="color: #b0b3b8; line-height: 1.8;">
-                <p><strong style="color: #00d4aa;">🚀 Cloud Computing:</strong> Fastest growing field (+28% annually) with highest remote work opportunities</p>
-                <p><strong style="color: #00f0ff;">🤖 AI/ML:</strong> Highest salary potential ($95K-$190K) and most in-demand skills</p>
-                <p><strong style="color: #b347d9;">📊 Data Science:</strong> Most accessible entry point with strong career progression</p>
-                <p><strong style="color: #ff6b6b;">🔒 Cybersecurity:</strong> Recession-proof with excellent job security and government opportunities</p>
-                <p><strong style="color: #ffffff;">💼 Remote Work:</strong> 68% of STEM jobs offer remote options, 89% offer hybrid flexibility</p>
-            </div>
-        </div>
-        """, unsafe_allow_html=True)
+        # Market insights
+        st.markdown("### 📊 Key Market Insights")
+        
+        insights = [
+            "🚀 **Cloud Computing:** Fastest growing field (+28% annually) with highest remote work opportunities",
+            "🤖 **AI/ML:** Highest salary potential ($95K-$190K) and most in-demand skills", 
+            "📊 **Data Science:** Most accessible entry point with strong career progression",
+            "🔒 **Cybersecurity:** Recession-proof with excellent job security",
+            "💼 **Remote Work:** 68% of STEM jobs offer remote options, 89% offer hybrid flexibility"
+        ]
+        
+        for insight in insights:
+            st.markdown(f"• {insight}")
     
     elif page == "📚 Course Catalog":
         st.header("📚 STEM Learning Catalog")
@@ -459,44 +386,110 @@ def main():
             col1, col2 = st.columns([2, 1])
             
             with col1:
-                st.markdown(f"""
-                <div class="glass-card">
-                    <h4 style="color: #00f0ff; margin-bottom: 1rem;">{selected_field}</h4>
-                    <p style="color: #b0b3b8; margin-bottom: 1.5rem;">{field_data['description']}</p>
-                    
-                    <div style="margin-bottom: 1.5rem;">
-                        <p style="color: #ffffff;"><strong>💰 Salary Range:</strong> {field_data['salary_range']}</p>
-                        <p style="color: #ffffff;"><strong>📈 Growth Rate:</strong> {field_data['growth_rate']}</p>
-                        <p style="color: #ffffff;"><strong>⏱️ Timeline:</strong> {field_data['timeline']}</p>
-                    </div>
-                    
-                    <h5 style="color: #00d4aa; margin-bottom: 1rem;">📚 Recommended Courses:</h5>
-                    <div style="margin-bottom: 1.5rem;">
-                        {' '.join([f'<span class="course-badge">{course}</span>' for course in field_data['courses']])}
-                    </div>
-                    
-                    <h5 style="color: #00d4aa; margin-bottom: 1rem;">🛠️ Key Skills:</h5>
-                    <div>
-                        {' '.join([f'<span class="course-badge">{skill}</span>' for skill in field_data['skills']])}
-                    </div>
-                </div>
-                """, unsafe_allow_html=True)
+                # Field header
+                st.markdown(f"## {selected_field}")
+                st.write(f"**Description:** {field_data['description']}")
+                
+                # Field details in organized sections
+                st.markdown("### 💰 Career Information")
+                
+                info_col1, info_col2, info_col3 = st.columns(3)
+                with info_col1:
+                    st.metric("💵 Salary Range", field_data['salary_range'])
+                with info_col2:
+                    st.metric("📈 Growth Rate", field_data['growth_rate'])
+                with info_col3:
+                    st.metric("⏱️ Timeline", field_data['timeline'])
+                
+                # Recommended courses
+                st.markdown("### 📚 Recommended Courses")
+                
+                for i, course in enumerate(field_data['courses'], 1):
+                    st.write(f"**{i}.** {course}")
+                
+                # Key skills section
+                st.markdown("### 🛠️ Essential Skills to Master")
+                
+                # Display skills as columns
+                skill_cols = st.columns(2)
+                for i, skill in enumerate(field_data['skills']):
+                    with skill_cols[i % 2]:
+                        st.write(f"• **{skill}**")
+                
+                # Learning path preview
+                st.markdown("### 🗺️ Learning Path Overview")
+                
+                phases = [
+                    ("Phase 1: Foundations", "30%", "Learn core concepts and theory"),
+                    ("Phase 2: Hands-on Practice", "50%", "Build projects and apply skills"),
+                    ("Phase 3: Job Preparation", "20%", "Portfolio building and interview prep")
+                ]
+                
+                for phase, percentage, description in phases:
+                    st.write(f"**{phase}** ({percentage}): {description}")
             
             with col2:
-                if st.button("🎯 Get Personalized Learning Path", type="primary"):
+                # Call to action
+                st.markdown("### 🎯 Ready to Start?")
+                
+                if st.button("🚀 Get Personalized Learning Path", type="primary", use_container_width=True):
                     st.success("✅ Personalized learning path generated!")
                     st.balloons()
                     
-                    st.markdown(f"""
-                    <div class="ai-response">
-                        <h5 style="color: #00f0ff;">Your {selected_field} Learning Plan</h5>
-                        <p><strong>📅 Timeline:</strong> {field_data['timeline']}</p>
-                        <p><strong>🎯 Phase 1 (30%):</strong> Foundations & Theory</p>
-                        <p><strong>🚀 Phase 2 (50%):</strong> Hands-on Projects</p>
-                        <p><strong>💼 Phase 3 (20%):</strong> Portfolio & Job Search</p>
-                        <p style="color: #00d4aa; margin-top: 1rem;"><strong>Success Rate:</strong> 87% completion rate</p>
-                    </div>
-                    """, unsafe_allow_html=True)
+                    # Success message with details
+                    st.markdown("### 🎉 Your Learning Plan is Ready!")
+                    
+                    st.info(f"""
+                    **🎯 Field:** {selected_field}
+                    
+                    **⏱️ Timeline:** {field_data['timeline']}
+                    
+                    **📋 What's Included:**
+                    • Structured curriculum
+                    • Hands-on projects  
+                    • Career guidance
+                    • Portfolio development
+                    
+                    **🎯 Success Rate:** 87% completion rate
+                    """)
+                    
+                    # Next steps
+                    st.markdown("### 📋 Your Next Steps")
+                    st.write("1. **Start with foundations** - Begin with core concepts")
+                    st.write("2. **Practice daily** - Dedicate 1-2 hours daily")
+                    st.write("3. **Build projects** - Apply your learning")
+                    st.write("4. **Join community** - Connect with learners")
+                    st.write("5. **Stay consistent** - Track your progress")
+                
+                # Additional resources
+                st.markdown("### 📖 Additional Resources")
+                
+                resources = [
+                    "🎓 Official Documentation",
+                    "👥 Community Forums", 
+                    "📹 Video Tutorials",
+                    "💼 Career Guidance",
+                    "🏆 Certification Prep"
+                ]
+                
+                for resource in resources:
+                    st.write(f"• {resource}")
+                
+                # Market demand indicator
+                st.markdown("### 📊 Market Demand")
+                
+                demand_score = {"AI & Machine Learning 🤖": 95, "Data Science 📊": 88, "Cybersecurity 🔒": 82, "Cloud Computing ☁️": 97}
+                field_demand = demand_score.get(selected_field, 85)
+                
+                st.progress(field_demand / 100)
+                st.write(f"**Demand Level:** {field_demand}/100")
+                
+                if field_demand >= 90:
+                    st.success("🔥 **Very High Demand** - Excellent career prospects!")
+                elif field_demand >= 80:
+                    st.info("📈 **High Demand** - Strong job market")
+                else:
+                    st.warning("📊 **Moderate Demand** - Steady opportunities")
     
     elif page == "🤖 AI Career Advisor":
         st.header("🤖 AI Career Advisor")
@@ -518,13 +511,8 @@ def main():
                 if st.button(f"❓ {question}", key=f"quick_{i}"):
                     with st.spinner("🤖 AI analyzing your question..."):
                         response = get_ai_response(question)
-                        st.markdown(f"""
-                        <div class="ai-response">
-                            <p><strong style="color: #00f0ff;">Question:</strong> {question}</p>
-                            <p><strong style="color: #00d4aa;">AI Expert Advice:</strong></p>
-                            <p style="color: #ffffff; line-height: 1.6;">{response}</p>
-                        </div>
-                        """, unsafe_allow_html=True)
+                        st.success(f"**Question:** {question}")
+                        st.info(f"**AI Expert Advice:**\n\n{response}")
         
         # Custom question
         st.subheader("💬 Ask Your Custom Question")
@@ -543,35 +531,21 @@ def main():
                         "timestamp": datetime.now().strftime("%H:%M")
                     })
                     
-                    st.markdown(f"""
-                    <div class="ai-response">
-                        <p><strong style="color: #00f0ff;">Your Question:</strong> {user_question}</p>
-                        <p><strong style="color: #00d4aa;">AI Expert Analysis:</strong></p>
-                        <p style="color: #ffffff; line-height: 1.6;">{response}</p>
-                    </div>
-                    """, unsafe_allow_html=True)
+                    st.success(f"**Your Question:** {user_question}")
+                    st.info(f"**AI Expert Analysis:**\n\n{response}")
         
         # Chat history
         if st.session_state.chat_history:
             st.subheader("💬 Recent Consultations")
             for chat in reversed(st.session_state.chat_history[-3:]):
-                st.markdown(f"""
-                <div class="glass-card">
-                    <small style="color: #888;">⏰ {chat['timestamp']}</small>
-                    <p style="margin: 0.5rem 0;"><strong style="color: #00f0ff;">Q:</strong> {chat['question'][:100]}...</p>
-                    <p style="margin: 0.5rem 0;"><strong style="color: #00d4aa;">A:</strong> {chat['answer'][:150]}...</p>
-                </div>
-                """, unsafe_allow_html=True)
+                with st.expander(f"🕐 {chat['timestamp']} - {chat['question'][:50]}..."):
+                    st.write(f"**Question:** {chat['question']}")
+                    st.write(f"**Answer:** {chat['answer']}")
     
     elif page == "🎯 Skill Assessment":
         st.header("🎯 STEM Readiness Assessment")
         
-        st.markdown("""
-        <div class="glass-card">
-            <h4 style="color: #00f0ff;">Evaluate Your Current Skills (1-10)</h4>
-            <p style="color: #b0b3b8;">Get personalized recommendations and career roadmap</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.info("📋 **Evaluate Your Current Skills (1-10)**\n\nGet personalized recommendations and career roadmap")
         
         # Skill assessment with visual bars
         skills = {
@@ -582,58 +556,95 @@ def main():
             "🔧 Technical Tools": st.slider("Technical Tools & Frameworks", 1, 10, 5)
         }
         
-        # Visual skill display
+        # Visual skill display using progress bars
+        st.subheader("📈 Your Current Skill Levels")
+        
         for skill_name, score in skills.items():
-            st.markdown(f"""
-            <div style="margin: 1rem 0;">
-                <p style="color: #ffffff; margin-bottom: 0.5rem;">{skill_name}: {score}/10</p>
-                <div class="skill-bar">
-                    <div class="skill-fill" style="width: {score * 10}%;"></div>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+            col1, col2, col3 = st.columns([3, 1, 1])
+            with col1:
+                st.write(f"**{skill_name}**")
+            with col2:
+                st.write(f"**{score}/10**")
+            with col3:
+                st.progress(score / 10)
         
         if st.button("📊 Generate Comprehensive Assessment", type="primary"):
             overall_score = sum(skills.values()) / len(skills)
             
             # Determine level and recommendations
             if overall_score >= 8:
-                level, color, advice = "Expert Level", "#00d4aa", "You're ready for senior positions! Focus on leadership and specialization."
+                level, advice, next_steps = "Expert Level", "You're ready for senior positions! Focus on leadership and specialization.", [
+                    "Apply for senior-level positions",
+                    "Consider technical leadership roles", 
+                    "Mentor junior professionals",
+                    "Contribute to open source projects"
+                ]
+                level_color = "🟢"
             elif overall_score >= 6:
-                level, color, advice = "Intermediate Level", "#00f0ff", "Strong foundation! Build projects and pursue certifications."
+                level, advice, next_steps = "Intermediate Level", "Strong foundation! Build projects and pursue certifications.", [
+                    "Complete 2-3 advanced portfolio projects",
+                    "Pursue industry certifications",
+                    "Start applying for mid-level positions",
+                    "Join professional communities"
+                ]
+                level_color = "🔵"
             elif overall_score >= 4:
-                level, color, advice = "Developing Level", "#b347d9", "Good start! Focus on core fundamentals and hands-on practice."
+                level, advice, next_steps = "Developing Level", "Good start! Focus on core fundamentals and hands-on practice.", [
+                    "Complete foundational courses",
+                    "Build 3-5 beginner projects",
+                    "Practice coding daily",
+                    "Find a mentor or study group"
+                ]
+                level_color = "🟡"
             else:
-                level, color, advice = "Beginner Level", "#ff6b6b", "Perfect starting point! Begin with foundations and don't rush."
+                level, advice, next_steps = "Beginner Level", "Perfect starting point! Begin with foundations and don't rush.", [
+                    "Start with basic programming courses",
+                    "Learn fundamental concepts",
+                    "Set up development environment",
+                    "Follow structured learning path"
+                ]
+                level_color = "🔴"
             
             st.session_state.assessment_done = True
             
-            st.markdown(f"""
-            <div class="glass-card">
-                <h4 style="color: #00f0ff;">🎯 Your STEM Readiness Report</h4>
-                <div class="metric-number" style="color: {color};">{overall_score:.1f}/10</div>
-                <div style="color: {color}; font-size: 1.3rem; font-weight: 600; margin-bottom: 2rem;">{level}</div>
-                
-                <div style="color: #ffffff; margin-bottom: 2rem;">
-                    <h5 style="color: #00d4aa;">📈 Skill Breakdown:</h5>
-                    {"".join([f"<p>{name}: {score}/10</p>" for name, score in skills.items()])}
-                </div>
-                
-                <div style="color: #ffffff; margin-bottom: 2rem;">
-                    <h5 style="color: #00d4aa;">💡 Personalized Advice:</h5>
-                    <p>{advice}</p>
-                </div>
-                
-                <div style="color: #ffffff;">
-                    <h5 style="color: #00d4aa;">🚀 Recommended Next Steps:</h5>
-                    <p>• Build 2-3 portfolio projects in your target field</p>
-                    <p>• Complete online courses in your weakest areas</p>
-                    <p>• Join STEM communities and start networking</p>
-                    <p>• Consider industry certifications</p>
-                    <p>• Practice coding daily (even 30 minutes helps)</p>
-                </div>
-            </div>
-            """, unsafe_allow_html=True)
+            # Display results using native Streamlit components
+            st.success("✅ Assessment Complete!")
+            
+            # Overall score
+            col1, col2, col3 = st.columns([1, 2, 1])
+            with col2:
+                st.metric(
+                    label=f"{level_color} Your STEM Readiness Score",
+                    value=f"{overall_score:.1f}/10",
+                    help=f"You are at {level}"
+                )
+            
+            # Level and advice
+            st.markdown(f"### 🎯 Assessment Results: **{level}**")
+            st.info(f"**💡 Personalized Advice:**\n\n{advice}")
+            
+            # Skill breakdown
+            st.markdown("### 📊 Detailed Skill Breakdown")
+            
+            skills_df = pd.DataFrame([
+                {"Skill Area": skill.replace("💻 ", "").replace("📊 ", "").replace("☁️ ", "").replace("🧠 ", "").replace("🔧 ", ""), 
+                 "Your Score": f"{score}/10", 
+                 "Level": "Expert" if score >= 8 else "Intermediate" if score >= 6 else "Developing" if score >= 4 else "Beginner"}
+                for skill, score in skills.items()
+            ])
+            
+            st.dataframe(skills_df, use_container_width=True)
+            
+            # Next steps
+            st.markdown("### 🚀 Recommended Next Steps")
+            
+            for i, step in enumerate(next_steps, 1):
+                st.write(f"**{i}.** {step}")
+            
+            # Personalized timeline
+            timeline_months = max(6, int(12 - (overall_score - 1)))
+            st.markdown(f"### ⏱️ Estimated Timeline to Career Transition")
+            st.warning(f"📅 **{timeline_months} months** based on your current skill level and target goals")
             
             st.balloons()
     
