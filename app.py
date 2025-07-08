@@ -637,66 +637,101 @@ def main():
             
             st.balloons()
     
-    # Fixed Footer - Natural Display
+    # Clean Footer Section
     st.markdown("---")
+    st.markdown("## 🚀 Ready to Transform Your Career?")
+    st.markdown("**Join thousands of professionals transitioning to high-growth STEM careers**")
     
-    # Success metrics section
-    st.markdown("### 🚀 Ready to Transform Your Career?")
-    st.markdown("Join thousands of professionals transitioning to high-growth STEM careers")
-    
-    # Metrics in columns for better display
+    # Success metrics using Streamlit native components
     col1, col2, col3 = st.columns(3)
     
     with col1:
-        st.markdown("""
-        <div style="background: rgba(0,240,255,0.1); padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0;">
-            <h2 style="color: #00f0ff; margin: 0; font-size: 2.5rem;">87%</h2>
-            <p style="color: #ffffff; margin: 0.5rem 0 0 0; font-weight: 600;">Success Rate</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric(
+            label="🎯 Success Rate", 
+            value="87%",
+            help="Of users successfully transition to STEM careers"
+        )
     
     with col2:
-        st.markdown("""
-        <div style="background: rgba(0,212,170,0.1); padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0;">
-            <h2 style="color: #00d4aa; margin: 0; font-size: 2.5rem;">10K+</h2>
-            <p style="color: #ffffff; margin: 0.5rem 0 0 0; font-weight: 600;">Career Transitions</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric(
+            label="👥 Career Transitions", 
+            value="10,000+",
+            help="Professionals helped worldwide"
+        )
     
     with col3:
-        st.markdown("""
-        <div style="background: rgba(179,71,217,0.1); padding: 1.5rem; border-radius: 12px; text-align: center; margin: 1rem 0;">
-            <h2 style="color: #b347d9; margin: 0; font-size: 2.5rem;">6-18</h2>
-            <p style="color: #ffffff; margin: 0.5rem 0 0 0; font-weight: 600;">Months Timeline</p>
-        </div>
-        """, unsafe_allow_html=True)
+        st.metric(
+            label="⏱️ Average Timeline", 
+            value="6-18 months",
+            help="From start to landing first STEM job"
+        )
+    
+    # Testimonial section
+    st.markdown("---")
+    st.markdown("### 💬 Success Story")
+    
+    st.info("""
+    **"This platform helped me transition from teaching to data science in just 8 months. 
+    The AI advisor and structured learning paths made all the difference!"**
+    
+    — Sarah M., Data Scientist at Tech Startup
+    """)
     
     # Call to action
     st.markdown("### 🎯 Start Your STEM Journey Today")
     
     col1, col2, col3 = st.columns([1, 2, 1])
     with col2:
-        if st.button("🚀 Begin Career Assessment", type="primary", use_container_width=True):
+        if st.button("🚀 Begin Free Career Assessment", type="primary", use_container_width=True):
             st.balloons()
             st.success("✅ Great choice! Navigate to 'Skill Assessment' to start your personalized career plan.")
     
-    # Final footer info
+    # Simple footer information
     st.markdown("---")
     
-    # Simple text footer
-    st.markdown("""
-    <div style="text-align: center; padding: 2rem 0; color: #b0b3b8;">
-        <p style="margin-bottom: 1rem; font-size: 1.1rem; color: #ffffff;">
-            <strong>Built with ❤️ by Faby Rizky & Pieter Andrian</strong>
-        </p>
-        <p style="margin-bottom: 0.5rem;">
-            🚀 Powered by Streamlit & Advanced AI Technology
-        </p>
-        <p style="margin-bottom: 0.5rem;">
-            📧 Questions? Join our community discussions
-        </p>
-        <p style="margin: 0; font-size: 0.9rem;">
-            © 2025 STEM Career Platform. Transforming careers, one professional at a time.
-        </p>
-    </div>
-    """, unsafe_allow_html=True)
+    # Footer info using columns
+    col1, col2 = st.columns(2)
+    
+    with col1:
+        st.markdown("""
+        **🔧 Built by:**
+        - Faby Rizky (Creator)
+        - Pieter Andrian (Developer)
+        """)
+    
+    with col2:
+        st.markdown("""
+        **⚡ Powered by:**
+        - Streamlit Framework
+        - OpenRouter AI (Qwen QwQ 32B)
+        - Advanced Analytics
+        """)
+    
+    # Final message
+    st.markdown("---")
+    st.markdown(
+        "<div style='text-align: center; color: #b0b3b8;'>"
+        "<p><strong>© 2025 STEM Career Platform</strong></p>"
+        "<p>🌟 Transforming careers, one professional at a time 🌟</p>"
+        "</div>", 
+        unsafe_allow_html=True
+    )
+    
+    # Action badges
+    st.markdown("### 🛣️ Your STEM Journey Path")
+    col1, col2, col3, col4 = st.columns(4)
+    
+    with col1:
+        st.info("**Step 1: Learn** 📚\nTake courses & build skills")
+    
+    with col2:
+        st.success("**Step 2: Build** 🛠️\nCreate portfolio projects")
+    
+    with col3:
+        st.warning("**Step 3: Network** 🤝\nConnect with professionals")
+    
+    with col4:
+        st.error("**Step 4: Land Job** 💼\nSecure your dream role")
+
+if __name__ == "__main__":
+    main()
