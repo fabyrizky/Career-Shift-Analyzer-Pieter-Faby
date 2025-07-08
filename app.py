@@ -666,17 +666,6 @@ def main():
             help="From start to landing first STEM job"
         )
     
-    # Testimonial section
-    st.markdown("---")
-    st.markdown("### 💬 Success Story")
-    
-    st.info("""
-    **"This platform helped me transition from teaching to data science in just 8 months. 
-    The AI advisor and structured learning paths made all the difference!"**
-    
-    — Sarah M., Data Scientist at Tech Startup
-    """)
-    
     # Call to action
     st.markdown("### 🎯 Start Your STEM Journey Today")
     
