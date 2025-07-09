@@ -696,7 +696,7 @@ def main():
         st.markdown("""
         **👥 Development Team:**
         
-        Built by **Faby Rizky** & Developed 🤝🏻 by **Pieter Andrian**
+        Built by **FABY RIZKY** & Co-developed 🤝🏻 by **ALVIN MUBAROK** Supervised by **PIETER ANDRIAN**
         """)
     
     with col2:
