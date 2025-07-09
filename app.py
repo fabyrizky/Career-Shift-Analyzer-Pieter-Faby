@@ -714,7 +714,7 @@ def main():
         <div style='background: rgba(0, 240, 255, 0.05); padding: 1.5rem; border-radius: 15px; text-align: center; border: 1px solid rgba(0, 240, 255, 0.2);'>
             <h4 style='color: #00f0ff; margin-bottom: 1rem;'>👨‍💻 Meet the Creators</h4>
             <p style='color: #ffffff; font-size: 1.1rem; margin-bottom: 0.5rem;'>
-                <strong>Built by Faby Rizky & Developed 🤝🏻 by Pieter Andrian</strong>
+                <strong>Built by FABY RIZKY, Co-developed 🤝🏻 by ALVIN MUBAROK & Supervised by PIETER ANDRIAN</strong>
             </p>
             <p style='color: #b0b3b8; margin-bottom: 1rem;'>
                 Passionate about helping professionals transition to tech careers
